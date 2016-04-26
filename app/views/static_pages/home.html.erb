@@ -1,0 +1,20 @@
+<h1>StaticPages#home</h1>
+<p>Find me in app/views/static_pages/home.html.erb</p>
+
+<% str = 'Lorem ipsum dolor sit amet, quaeque partiendo salutandi ei sit, ut erat latine inermis vix. Te utroque luptatum assueverit ius, postea dictas praesent has at. Eu vis dicant democritum consequuntur, id eos virtute inimicus. Eu eos viderer invenire, docendi albucius disputationi in mei, cu propriae reprehendunt quo. Ea dicit audiam appellantur has, ex eam nostrud forensibus suscipiantur.
+' %>
+
+<% 3.times do |i| %>
+  <% if i != 0 then %>
+    <hr>
+  <% end %>
+
+  <div class="row">
+    <% 3.times do |j| %>
+      <div class="col-md-4">
+        <p><%= str %></p>
+      </div>
+    <% end %>
+  </div>
+
+<% end %>
